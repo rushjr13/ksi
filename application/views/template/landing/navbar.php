@@ -14,7 +14,7 @@
                 <li><a href="http://www.facebook.com/<?=$pengaturan['facebook'] ?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.twitter.com/<?=$pengaturan['twitter'] ?>" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.instagram.com/<?=$pengaturan['instagram'] ?>" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="<?=base_url('admin') ?>" title="Masuk Admin"><i class="fa fa-sign-in"></i></a></li>
+                <li><a href="<?=base_url('admin') ?>" target="_blank" title="Masuk Admin"><i class="fa fa-sign-in"></i></a></li>
             </ul>
 	    </div>
 	</section>
