@@ -1,7 +1,7 @@
 <!-- Slider area -->
 <section class="slider_area row m0">
     <div class="slider_inner">
-        <div data-thumb="<?=base_url('assets/landing/') ?>images/kantor-gubernur1.jpg" data-src="<?=base_url('assets/landing/') ?>images/kantor-gubernur1.jpg">
+        <div data-thumb="<?=base_url('assets/landing/images/slider1.jpg') ?>" data-src="<?=base_url('assets/landing/images/slider1.jpg') ?>">
             <div class="camera_caption">
                <div class="container">
                     <h5 class=" wow fadeInUp animated">Selamat Datang Di KSI</h5>
@@ -11,7 +11,7 @@
                </div>
             </div>
         </div>
-        <div data-thumb="<?=base_url('assets/landing/') ?>images/kantor-gubernur2.jpg" data-src="<?=base_url('assets/landing/') ?>images/kantor-gubernur2.jpg">
+        <div data-thumb="<?=base_url('assets/landing/images/slider2.jpg') ?>" data-src="<?=base_url('assets/landing/images/slider2.jpg') ?>">
             <div class="camera_caption">
                <div class="container">
                     <h5 class=" wow fadeInUp animated">Selamat Datang Di KSI</h5>

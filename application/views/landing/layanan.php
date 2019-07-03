@@ -14,23 +14,10 @@
             <div class="row building_construction_row">
                 <div class="col-sm-8 constructing_laft">
                     <h2>Constructing</h2>
-                    <img src="<?=base_url('assets/landing/') ?>images/construction.jpg" alt="">
+                    <img src="<?=base_url('assets/landing/images/no_images.jpg') ?>" alt="">
                     <a href="#">Building Construction</a>
-                    <p>Berlawanan dengan kepercayaan populer, Lorem Ipsum bukan hanya teks acak. Ini berakar pada sepotong sastra Latin klasik dari 45 SM, membuatnya lebih dari 2000 tahun. Richard McClintock, seorang profesor Latin di Hampden-Sydney College di Virginia, mencari salah satu kata Latin yang lebih tidak jelas, consectetur, dari bagian Lorem Ipsum, dan menelusuri kutipan kata dalam literatur klasik, menemukan sumber yang tidak diragukan lagi.</p>
-                    <div class="col-md-6 ipsum">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor dan vitalitas, sehingga tenaga kerja dan kesedihan, beberapa hal penting yang harus dilakukan eiusmod. Selama bertahun-tahun yang akan datang, yang nostrud latihan, distrik sekolah mungkin tidak bekerja untuk menjadi ditempa aliquip-do lingkungan.</p>
-                        <ul class="excavator">
-                            <li><i class="fa fa-chevron-circle-right"></i>Excavator Hidrolik</li>
-                            <li><i class="fa fa-chevron-circle-right"></i>Peralatan tiang pancang</li>
-                            <li><i class="fa fa-chevron-circle-right"></i>Mesin Pelabuhan</li>
-                            <li><i class="fa fa-chevron-circle-right"></i>Pompa Beton</li>
-                            <li><i class="fa fa-chevron-circle-right"></i>Penggali & lainnya</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 ipsum_img"><img src="<?=base_url('assets/landing/') ?>images/construction-2.jpg" alt=""></div>
-                    <div class="col-md-12 p0">
-                        <p>Ada banyak variasi bagian dari Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk, dengan menyuntikkan humor, atau kata-kata acak yang tidak terlihat bahkan sedikit dapat dipercaya.</p>
-                    </div>
+                    <p class="text-justify">Berlawanan dengan kepercayaan populer, Lorem Ipsum bukan hanya teks acak. Ini berakar pada sepotong sastra Latin klasik dari 45 SM, membuatnya lebih dari 2000 tahun. Richard McClintock, seorang profesor Latin di Hampden-Sydney College di Virginia, mencari salah satu kata Latin yang lebih tidak jelas, consectetur, dari bagian Lorem Ipsum, dan menelusuri kutipan kata dalam literatur klasik, menemukan sumber yang tidak diragukan lagi.</p>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor dan vitalitas, sehingga tenaga kerja dan kesedihan, beberapa hal penting yang harus dilakukan eiusmod. Selama bertahun-tahun yang akan datang, yang nostrud latihan, distrik sekolah mungkin tidak bekerja untuk menjadi ditempa aliquip-do lingkungan.</p>
                 </div>
                 <div class="col-sm-4 constructing_right">
                     <h2>Tautan Langsung</h2>
