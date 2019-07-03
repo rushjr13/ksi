@@ -16,6 +16,7 @@ class Pemberitahuan extends CI_Controller {
 		$data['pengguna_masuk'] = $this->Admin_model->pengguna($id_pengguna);
 		$data['pengaturan'] = $this->Admin_model->pengaturan();
 		$data['pemberitahuan'] = $this->Admin_model->pemberitahuan();
+		$data['email_masuk'] = $this->Admin_model->email_masuk();
 		$data['tgl_sekarang'] = $this->Admin_model->tgl_indo(date('Y-m-d'));
 		$data['hari_sekarang'] = $this->Admin_model->hari(date('l'));
 		$data['menu'] = $this->Admin_model->menu();
@@ -58,6 +59,7 @@ class Pemberitahuan extends CI_Controller {
 		$data['pengguna_masuk'] = $this->Admin_model->pengguna($id_pengguna);
 		$data['pengaturan'] = $this->Admin_model->pengaturan();
 		$data['pemberitahuan'] = $this->Admin_model->pemberitahuan();
+		$data['email_masuk'] = $this->Admin_model->email_masuk();
 		$data['tgl_sekarang'] = $this->Admin_model->tgl_indo(date('Y-m-d'));
 		$data['hari_sekarang'] = $this->Admin_model->hari(date('l'));
 		$data['menu'] = $this->Admin_model->menu();
@@ -95,6 +97,7 @@ class Pemberitahuan extends CI_Controller {
 		$data['pengguna_masuk'] = $this->Admin_model->pengguna($id_pengguna);
 		$data['pengaturan'] = $this->Admin_model->pengaturan();
 		$data['pemberitahuan'] = $this->Admin_model->pemberitahuan();
+		$data['email_masuk'] = $this->Admin_model->email_masuk();
 		$data['tgl_sekarang'] = $this->Admin_model->tgl_indo(date('Y-m-d'));
 		$data['hari_sekarang'] = $this->Admin_model->hari(date('l'));
 		$data['menu'] = $this->Admin_model->menu();
