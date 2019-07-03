@@ -15,10 +15,9 @@
                 <div class="col-md-3 col-sm-6 footer_about quick">
                     <h2>MENU CEPAT</h2>
                     <ul class="quick_link">
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Visi & Misi KSI</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Struktur Organisasi KSI</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Galeri</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Tentang KSI</a></li>
+                        <?php foreach ($menulanding as $ml): ?>
+                            <li><a href="<?=base_url().$ml['url_ml'] ?>"><i class="fa fa-chevron-right"></i><?=$ml['nama_ml'] ?></a></li>                            
+                        <?php endforeach ?>
                     </ul>
                 </div>
                 <div class="col-md-4 col-sm-6 footer_about">

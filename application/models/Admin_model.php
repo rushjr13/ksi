@@ -375,4 +375,19 @@ class Admin_model extends CI_Model {
         }
     }
 
+    // EMAIL MASUK
+    function email_masuk($id_em=null){
+        if($id_em==null){
+            $this->db->select('*');
+            $this->db->from('email_masuk');
+            $this->db->order_by('tgl_em', 'DESC');
+            return $this->db->get()->result_array();
+        } else {
+            $this->db->select('*');
+            $this->db->from('email_masuk');
+            $this->db->where('email_masuk.id_em', $id_em);
+            return $this->db->get()->row_array();
+        }
+    }
+
 }
