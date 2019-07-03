@@ -10,7 +10,8 @@ class Beranda extends CI_Controller {
 		$data['menulanding'] = $this->Admin_model->menulandingaktif();
 
 		// KHUSUS
-		$data['judul'] = "Layanan KSI";
+		$data['judul'] = "Kebijakan Strategi & Informasi";
+		$data['siapa_kami'] = $this->Admin_model->siapa_kami();
 		$this->load->view('template/landing/header', $data);
 		$this->load->view('template/landing/navbar', $data);
 		$this->load->view('landing/index', $data);
