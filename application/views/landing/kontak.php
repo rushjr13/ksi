@@ -36,11 +36,16 @@
                 </div>
                 <div class="col-sm-6 contact_info send_message">
                     <h2>Kirim Kami Sebuah Pesan</h2>
+                    <?= $this->session->flashdata('info'); ?>
                     <form class="form-inline contact_box" action="<?=base_url('kontak') ?>" method="post">
-                        <input type="text" class="form-control input_box" id="nama_lengkap" name="nama_lengkap" placeholder="Nama Lengkap *">
-                        <input type="text" class="form-control input_box" id="email" name="email" placeholder="Alamat Email *">
-                        <input type="text" class="form-control input_box" id="perihal" name="perihal" placeholder="Perihal *">
-                        <textarea class="form-control input_box" id="isi_pesan" name="isi_pesan" placeholder="Masukkkan Pesan Anda *"></textarea>
+                        <?php echo form_error('nama_lengkap', '<small class="text-danger ml-3" style="font-style:italic;">', '</small>'); ?>
+                        <input type="text" class="form-control input_box" id="nama_lengkap" name="nama_lengkap" placeholder="Nama Lengkap *" value="<?=set_value('nama_lengkap') ?>">
+                        <?php echo form_error('email', '<small class="text-danger ml-3" style="font-style:italic;">', '</small>'); ?>
+                        <input type="text" class="form-control input_box" id="email" name="email" placeholder="Alamat Email *"  value="<?=set_value('email') ?>">
+                        <?php echo form_error('perihal', '<small class="text-danger ml-3" style="font-style:italic;">', '</small>'); ?>
+                        <input type="text" class="form-control input_box" id="perihal" name="perihal" placeholder="Perihal *"  value="<?=set_value('perihal') ?>">
+                        <?php echo form_error('isi_pesan', '<small class="text-danger ml-3" style="font-style:italic;">', '</small>'); ?>
+                        <textarea class="form-control input_box" id="isi_pesan" name="isi_pesan" placeholder="Masukkkan Pesan Anda *"  value="<?=set_value('isi_pesan') ?>"></textarea>
                         <button type="submit" class="btn btn-default">Kirim Pesan</button>
                     </form>
                 </div>
