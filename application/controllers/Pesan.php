@@ -23,33 +23,12 @@ class Pesan extends CI_Controller {
 		$data['submenu'] = $this->Admin_model->submenu();
 
 		// KHUSUS
-		$this->form_validation->set_rules('isi_pemberitahuan', 'Pemberitahuan', 'required',[
-			'required' => 'Pemberitahuan Harus Diisi!'
-		]);
-
-		if ($this->form_validation->run() == FALSE){
-			$data['judul'] = "Pemberitahuan";
-			$this->load->view('template/admin/header', $data);
-			$this->load->view('template/admin/sidebar', $data);
-			$this->load->view('template/admin/topbar', $data);
-			$this->load->view('admin/pemberitahuan/index', $data);
-			$this->load->view('template/admin/footer', $data);
-		} else {
-			$data = [
-				'tgl_pemberitahuan'=>$this->input->post('tgl_pemberitahuan'),
-				'isi_pemberitahuan'=>$this->input->post('isi_pemberitahuan'),
-				'id_pengguna'=>$this->input->post('id_pengguna'),
-				'baca'=>0
-			];
-			$this->db->insert('pemberitahuan', $data);
-			$this->session->set_flashdata('info', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-													  <i class="fa fa-fw fa-info-circle"></i> Pemberitahuan telah ditambah!
-													  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-													    <span aria-hidden="true">&times;</span>
-													  </button>
-													</div>');
-			redirect('pemberitahuan');
-		}
+		$data['judul'] = "Email / Pesan Masuk";
+		$this->load->view('template/admin/header', $data);
+		$this->load->view('template/admin/sidebar', $data);
+		$this->load->view('template/admin/topbar', $data);
+		$this->load->view('admin/pesan/index', $data);
+		$this->load->view('template/admin/footer', $data);
 	}
 
 	public function lihat($id=null)
@@ -67,25 +46,25 @@ class Pesan extends CI_Controller {
 
 		if($id==null){
 			$this->session->set_flashdata('info', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-													  <i class="fa fa-fw fa-info-circle"></i> Tidak ada pemberitahuan untuk ditampilkan!
+													  <i class="fa fa-fw fa-info-circle"></i> Tidak ada email / pesan untuk ditampilkan!
 													  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
 													    <span aria-hidden="true">&times;</span>
 													  </button>
 													</div>');
-			redirect('pemberitahuan');
+			redirect('pesan');
 		} else{
 			// Ubah status berita menjadi sudah dibaca
-			$this->db->set('baca', 1);
-			$this->db->where('id_pemberitahuan', $id);
-			$this->db->update('pemberitahuan');
+			$this->db->set('status_em', 1);
+			$this->db->where('id_em', $id);
+			$this->db->update('email_masuk');
 
 			// KHUSUS
-			$data['judul'] = "Pemberitahuan";
-			$data['pemberitahuan_id'] = $this->Admin_model->pemberitahuan($id);
+			$data['judul'] = "Email / Pesan Masuk";
+			$data['pesan_id'] = $this->Admin_model->email_masuk($id);
 			$this->load->view('template/admin/header', $data);
 			$this->load->view('template/admin/sidebar', $data);
 			$this->load->view('template/admin/topbar', $data);
-			$this->load->view('admin/pemberitahuan/lihat', $data);
+			$this->load->view('admin/pesan/lihat', $data);
 			$this->load->view('template/admin/footer', $data);
 		}
 	}
@@ -107,22 +86,22 @@ class Pesan extends CI_Controller {
 		if($opsi=='id'){
 			if($id==null){
 				$this->session->set_flashdata('info', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-														  <i class="fa fa-fw fa-info-circle"></i> Tidak ada pemberitahuan yang dihapus!
+														  <i class="fa fa-fw fa-info-circle"></i> Tidak ada email / pesan untuk dihapus!
 														  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
 														    <span aria-hidden="true">&times;</span>
 														  </button>
 														</div>');
-				redirect('pemberitahuan');
+				redirect('pesan');
 			} else {
-				$this->db->where('id_pemberitahuan', $id);
-				$this->db->delete('pemberitahuan');
+				$this->db->where('id_em', $id);
+				$this->db->delete('email_masuk');
 				$this->session->set_flashdata('info', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-														  <i class="fa fa-fw fa-info-circle"></i> Pemberitahuan telah dihapus!
+														  <i class="fa fa-fw fa-info-circle"></i> Email / Pesan : <strong>'.$this->input->post('perihal_em').'</strong> telah dihapus!
 														  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
 														    <span aria-hidden="true">&times;</span>
 														  </button>
 														</div>');
-				redirect('pemberitahuan');
+				redirect('pesan');
 			}
 		} else if($opsi=='sudah_dibaca'){
 			$this->db->where('baca', 1);

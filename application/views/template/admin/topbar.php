@@ -191,9 +191,9 @@
                       <div class="font-weight-bold">
                         <div class="small text-gray-500"><?=$em['nama_pengirim'] ?> (<?=$em['email_pengirim'] ?>)</div>
                         <?php if($em['status_em']==0){ ?>
-                          <span class="font-weight-bold"><?=$em['isi_em'] ?></span>
+                          <span class="font-weight-bold"><?=$em['perihal_em'] ?></span>
                         <?php }else{ ?>
-                          <span><?=$em['isi_em'] ?></span>
+                          <span><?=$em['perihal_em'] ?></span>
                         <?php } ?>
                         <div class="small text-gray-500"><?=$tgl_em2 ?></div>
                       </div>

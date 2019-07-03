@@ -39,7 +39,7 @@ class Kontak extends CI_Controller {
 				'isi_em'=>$this->input->post('isi_pesan')
 			];
 			$this->db->insert('email_masuk', $data);
-			$this->session->set_flashdata('info', '<small class="text-primary" style="font-style:italic;">Pesan Anda Telah Terkirim!<br>Terima Kasih Atas Partisipasi Anda.</small>');
+			$this->session->set_flashdata('info', '<small class="text-success" style="font-style:italic;">Pesan Anda Telah Terkirim!<br>Terima Kasih Atas Partisipasi Anda.</small>');
 			redirect('kontak');
 		}
 	}
