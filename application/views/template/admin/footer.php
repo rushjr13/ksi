@@ -67,6 +67,9 @@
   <!-- Custom scripts for all pages-->
   <script src="<?=base_url('assets/admin/')?>js/sb-admin-2.min.js"></script>
 
+  <!-- Tawk.to Chatting -->
+  <script src="<?=base_url('assets/admin/')?>js/chat.js"></script>
+
   <!-- Page level plugins -->
   <script src="<?=base_url('assets/admin/')?>vendor/chart.js/Chart.min.js"></script>
   <script src="<?=base_url('assets/admin/')?>vendor/datatables/jquery.dataTables.min.js"></script>

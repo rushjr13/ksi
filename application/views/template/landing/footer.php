@@ -61,5 +61,8 @@
     <script src="<?=base_url('assets/landing/') ?>vendors/stellar/jquery.stellar.js"></script>
     <!-- Theme JS -->
     <script src="<?=base_url('assets/landing/') ?>js/theme.js"></script>
+
+    <!-- Tawk.to Chatting -->
+    <script src="<?=base_url('assets/landing/') ?>js/chat.js"></script>
 </body>
 </html>

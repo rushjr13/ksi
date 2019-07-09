@@ -20,6 +20,9 @@
   <!-- Custom scripts for all pages-->
   <script src="<?=base_url('assets/admin/') ?>js/sb-admin-2.min.js"></script>
 
+  <!-- Tawk.to Chatting -->
+  <script src="<?=base_url('assets/admin/')?>js/chat.js"></script>
+
 </body>
 
 </html>
