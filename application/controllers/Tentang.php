@@ -6,6 +6,7 @@ class Tentang extends CI_Controller {
 	public function index()
 	{
 		// UMUM
+		$data['pengguna_masuk'] = $this->session->userdata('id_user_masuk');
 		$data['pengaturan'] = $this->Admin_model->pengaturan();
 		$data['menulanding'] = $this->Admin_model->menulandingaktif();
 
