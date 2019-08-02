@@ -47,15 +47,9 @@
                                 <li><a href="index-2.html">Home 2</a></li>
                             </ul> -->
                         </li>
-                        <?php if($pengguna_masuk){ ?>
-                            <?php foreach ($menulanding as $ml): ?>
-                                <li><a href="<?=base_url().$ml['url_ml'] ?>"><?=$ml['nama_ml'] ?></a></li>
-                            <?php endforeach ?>
-                        <?php }else{ ?>
-                            <?php foreach ($menulandingaktif as $ml): ?>
-                                <li><a href="<?=base_url().$ml['url_ml'] ?>"><?=$ml['nama_ml'] ?></a></li>
-                            <?php endforeach ?>
-                        <?php } ?>
+                        <?php foreach ($menulanding as $ml): ?>
+                            <li><a href="<?=base_url().$ml['url_ml'] ?>"><?=$ml['nama_ml'] ?></a></li>
+                        <?php endforeach ?>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
