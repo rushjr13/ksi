@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.9.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2019 at 08:18 AM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 7.1.11
+-- Generation Time: Feb 14, 2020 at 06:16 AM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.3.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -43,6 +43,22 @@ INSERT INTO `akses_menu` (`id`, `id_level`, `id_menu`) VALUES
 (2, 1, 2),
 (3, 1, 3),
 (4, 2, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `email_masuk`
+--
+
+CREATE TABLE `email_masuk` (
+  `id_em` int(11) NOT NULL,
+  `tgl_em` int(11) NOT NULL,
+  `nama_pengirim` varchar(255) NOT NULL,
+  `email_pengirim` varchar(255) NOT NULL,
+  `perihal_em` varchar(255) NOT NULL,
+  `isi_em` text NOT NULL,
+  `status_em` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -96,13 +112,13 @@ INSERT INTO `galeri_lengkap` (`id`, `id_pengguna`, `judul`, `tanggal`, `isi`, `g
 (1, 2, 'Quos ratione expedita et doloribus id.', '1984-07-10 17:22:18', 'Dormouse, without considering at all know whether it was addressed to the confused clamour of the sea.\' \'I couldn\'t help it,\' said the Rabbit\'s voice; and Alice was more than that, if you only kept on puzzling about it in time,\' said the King: \'however, it may kiss my hand if it please your Majesty!\' the Duchess to play croquet.\' The Frog-Footman repeated, in the act of crawling away: besides all this, there was not easy to take MORE than nothing.\' \'Nobody asked YOUR opinion,\' said Alice..', 'r-1.jpg', 1),
 (2, 2, 'Autem ut iste sit.', '1997-05-08 22:48:27', 'Queen. \'Well, I hardly know--No more, thank ye; I\'m better now--but I\'m a deal too far off to trouble myself about you: you must manage the best cat in the sea. The master was an old Turtle--we used to read fairy-tales, I fancied that kind of thing never happened, and now here I am now? That\'ll be a letter, written by the hand, it hurried off, without waiting for turns, quarrelling all the things between whiles.\' \'Then you shouldn\'t talk,\' said the Duchess; \'and the moral of that dark hall,.', 'r-2.jpg', 0),
 (3, 2, 'Et ratione ipsa dolorum.', '1998-02-06 14:49:33', 'Then came a rumbling of little pebbles came rattling in at the window.\' \'THAT you won\'t\' thought Alice, \'as all the unjust things--\' when his eye chanced to fall a long way back, and barking hoarsely all the unjust things--\' when his eye chanced to fall a long silence after this, and Alice was soon submitted to by the carrier,\' she thought; \'and how funny it\'ll seem to put down the chimney?--Nay, I shan\'t! YOU do it!--That I won\'t, then!--Bill\'s to go through next walking about at the Lizard.', 'r-3.jpg', 0),
-(4, 2, 'Veniam exercitationem illo tenetur iusto.', '1997-12-28 05:16:31', 'Alice; \'but a grin without a cat! It\'s the most curious thing I ever saw in my kitchen AT ALL. Soup does very well as she heard a voice outside, and stopped to listen. The Fish-Footman began by producing from under his arm a great many more than three.\' \'Your hair wants cutting,\' said the Footman, \'and that for the Duchess was sitting on the floor, as it is.\' \'Then you may stand down,\' continued the Pigeon, raising its voice to a farmer, you know, and he hurried off. Alice thought to herself,.', 'r-4.jpg', 1),
+(4, 2, 'Veniam exercitationem illo tenetur iusto.', '1997-12-28 05:16:31', 'Alice; \'but a grin without a cat! It\'s the most curious thing I ever saw in my kitchen AT ALL. Soup does very well as she heard a voice outside, and stopped to listen. The Fish-Footman began by producing from under his arm a great many more than three.\' \'Your hair wants cutting,\' said the Footman, \'and that for the Duchess was sitting on the floor, as it is.\' \'Then you may stand down,\' continued the Pigeon, raising its voice to a farmer, you know, and he hurried off. Alice thought to herself,.', 'r-4.jpg', 2),
 (5, 2, 'Velit quia voluptatem eveniet.', '1972-04-24 06:31:25', 'Rabbit say to this: so she went on: \'But why did they live on?\' said the Caterpillar took the opportunity of saying to her chin upon Alice\'s shoulder, and it put the hookah into its face to see its meaning. \'And just as she had expected: before she found she could do, lying down with her head!\' Alice glanced rather anxiously at the mouth with strings: into this they slipped the guinea-pig, head first, and then, if I shall be punished for it now, I suppose, by being drowned in my kitchen AT.', 'r-5.jpg', 0),
 (6, 1, 'Sed earum eum.', '1993-09-21 10:34:54', 'I\'m doubtful about the games now.\' CHAPTER X. The Lobster Quadrille The Mock Turtle\'s Story \'You can\'t think how glad I am to see how the Dodo had paused as if his heart would break. She pitied him deeply. \'What is it?\' \'Why,\' said the Pigeon went on, looking anxiously about as curious as it is.\' \'Then you may SIT down,\' the King said to herself; \'his eyes are so VERY much out of sight: then it watched the White Rabbit read:-- \'They told me he was gone, and, by the prisoner to--to somebody.\'.', 'r-6.jpg', 6),
 (7, 1, 'Nesciunt aut vel corrupti sapiente quaerat.', '1972-10-24 09:34:20', 'I will prosecute YOU.--Come, I\'ll take no denial; We must have got in as well,\' the Hatter said, turning to the Knave. The Knave of Hearts, who only bowed and smiled in reply. \'Idiot!\' said the Duchess: \'and the moral of that is--\"The more there is of mine, the less there is of yours.\"\' \'Oh, I BEG your pardon!\' cried Alice (she was so small as this before, never! And I declare it\'s too bad, that it signifies much,\' she said to herself, \'Now, what am I to get to,\' said the March Hare went \'Sh!.', 'r-7.jpg', 3),
 (8, 2, 'Ut in beatae inventore.', '1972-06-10 12:51:19', 'I won\'t, then!--Bill\'s to go near the entrance of the table. \'Have some wine,\' the March Hare said to itself \'The Duchess! The Duchess! Oh my fur and whiskers! She\'ll get me executed, as sure as ferrets are ferrets! Where CAN I have ordered\'; and she was terribly frightened all the right height to rest her chin upon Alice\'s shoulder, and it put the Dormouse indignantly. However, he consented to go from here?\' \'That depends a good opportunity for making her escape; so she sat on, with closed.', 'r-8.jpg', 0),
-(9, 2, 'Libero modi quia dolore.', '1982-08-14 14:57:55', 'CHAPTER VI. Pig and Pepper For a minute or two she stood still where she was, and waited. When the sands are all dry, he is gay as a lark, And will talk in contemptuous tones of her head through the neighbouring pool--she could hear him sighing as if she meant to take MORE than nothing.\' \'Nobody asked YOUR opinion,\' said Alice. \'Why, SHE,\' said the Mock Turtle. \'She can\'t explain it,\' said the Cat; and this time the Queen merely remarking as it turned round and swam slowly back to the baby,.', 'r-9.jpg', 8),
-(10, 2, 'Aperiam voluptatem suscipit eaque dignissimos.', '1993-09-20 08:57:19', 'Ugh, Serpent!\' \'But I\'m NOT a serpent!\' said Alice hastily; \'but I\'m not Ada,\' she said, by way of escape, and wondering what to beautify is, I can\'t show it you myself,\' the Mock Turtle: \'why, if a fish came to the porpoise, \"Keep back, please: we don\'t want to go on. \'And so these three little sisters--they were learning to draw, you know--\' \'But, it goes on \"THEY ALL RETURNED FROM HIM TO YOU,\"\' said Alice. \'You are,\' said the Caterpillar. \'Well, I\'ve tried hedges,\' the Pigeon went on, \'What.', 'r-1.jpg', 15);
+(9, 2, 'Libero modi quia dolore.', '1982-08-14 14:57:55', 'CHAPTER VI. Pig and Pepper For a minute or two she stood still where she was, and waited. When the sands are all dry, he is gay as a lark, And will talk in contemptuous tones of her head through the neighbouring pool--she could hear him sighing as if she meant to take MORE than nothing.\' \'Nobody asked YOUR opinion,\' said Alice. \'Why, SHE,\' said the Mock Turtle. \'She can\'t explain it,\' said the Cat; and this time the Queen merely remarking as it turned round and swam slowly back to the baby,.', 'r-9.jpg', 10),
+(10, 2, 'Aperiam voluptatem suscipit eaque dignissimos.', '1993-09-20 08:57:19', 'Ugh, Serpent!\' \'But I\'m NOT a serpent!\' said Alice hastily; \'but I\'m not Ada,\' she said, by way of escape, and wondering what to beautify is, I can\'t show it you myself,\' the Mock Turtle: \'why, if a fish came to the porpoise, \"Keep back, please: we don\'t want to go on. \'And so these three little sisters--they were learning to draw, you know--\' \'But, it goes on \"THEY ALL RETURNED FROM HIM TO YOU,\"\' said Alice. \'You are,\' said the Caterpillar. \'Well, I\'ve tried hedges,\' the Pigeon went on, \'What.', 'r-1.jpg', 18);
 
 -- --------------------------------------------------------
 
@@ -214,9 +230,9 @@ CREATE TABLE `menu_landing` (
 
 INSERT INTO `menu_landing` (`id_ml`, `nama_ml`, `url_ml`, `status_ml`) VALUES
 (1, 'Tentang Kami', 'tentang', 1),
-(2, 'Layanan', 'layanan', 1),
-(3, 'Galeri', 'galeri', 1),
-(4, 'Blog', 'blog', 1),
+(2, 'Galeri', 'galeri', 1),
+(3, 'Blog', 'blog', 1),
+(4, 'Layanan', 'layanan', 2),
 (5, 'Hubungi Kami', 'kontak', 1);
 
 -- --------------------------------------------------------
@@ -324,6 +340,13 @@ CREATE TABLE `pemberitahuan` (
   `id_pengguna` int(11) NOT NULL,
   `baca` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pemberitahuan`
+--
+
+INSERT INTO `pemberitahuan` (`id_pemberitahuan`, `tgl_pemberitahuan`, `isi_pemberitahuan`, `id_pengguna`, `baca`) VALUES
+(1, 1562123444, 'Pengaturan website telah diperbarui', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -498,6 +521,12 @@ ALTER TABLE `akses_menu`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `email_masuk`
+--
+ALTER TABLE `email_masuk`
+  ADD PRIMARY KEY (`id_em`);
+
+--
 -- Indexes for table `galeri_kegiatan`
 --
 ALTER TABLE `galeri_kegiatan`
@@ -612,6 +641,12 @@ ALTER TABLE `akses_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT for table `email_masuk`
+--
+ALTER TABLE `email_masuk`
+  MODIFY `id_em` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `galeri_kegiatan`
 --
 ALTER TABLE `galeri_kegiatan`
@@ -669,7 +704,7 @@ ALTER TABLE `pegawai`
 -- AUTO_INCREMENT for table `pemberitahuan`
 --
 ALTER TABLE `pemberitahuan`
-  MODIFY `id_pemberitahuan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pemberitahuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `pengguna`
